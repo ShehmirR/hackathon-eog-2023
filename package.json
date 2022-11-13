@@ -20,6 +20,7 @@
     "@types/react-dom": "^17.0.11",
     "axios": "^0.26.1",
     "bootstrap": "^5.2.2",
+    "d3": "^7.6.1",
     "firebase": "^9.6.10",
     "igniteui-react-charts": "^18.1.0",
     "jquery-csv": "^1.0.21",
