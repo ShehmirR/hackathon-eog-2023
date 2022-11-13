@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Dashboard from "./Dashboard/Dashboard";
 import Analytics from "./Analytics/Analytics";
-import InfluencerSearch from "./InfluencerSearch/InfluencerSearch";
+import InfluencerSearch from "./optimalGraphAnalytics/InfluencerSearch";
 
 function App() {
   // All the routing is set here
