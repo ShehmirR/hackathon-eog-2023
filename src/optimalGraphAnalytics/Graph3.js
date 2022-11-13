@@ -17,7 +17,7 @@ const data = [
     name: 'Page 1',
     uv: 590,
     pv: 800,
-    amt: 1400,
+    amt: 1401,
   },
   {
     name: 'Page 2',
