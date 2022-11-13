@@ -4,7 +4,7 @@ import { ReactComponent as ViewIcon } from "../icons/eye-icon.svg";
 import { ReactComponent as LikeIcon } from "../icons/heart-icon.svg";
 import { VictoryPie, VictoryLabel } from "victory";
 import React from 'react'
-import MiniGraph2 from "./MiniGraph2";
+import MiniGraph3 from "./MiniGraph3";
 
 const styles = {
   // Creating all the styles here
@@ -55,7 +55,7 @@ const Graph1 = () => {
    
     <div style={styles.root}>
     
-      <MiniGraph2></MiniGraph2>
+      <MiniGraph3></MiniGraph3>
       </div>
    
   

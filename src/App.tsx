@@ -14,6 +14,8 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/campaign/:id/analytics" element={<Analytics />} />
         <Route path="/campaign/:id/search" element={<InfluencerSearch />} />
+        <Route path="/campaign/:id/people" element={<InfluencerSearch />} />
+
 
       </Routes>
     </BrowserRouter>

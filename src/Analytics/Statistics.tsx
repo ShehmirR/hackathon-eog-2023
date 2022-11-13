@@ -4,6 +4,9 @@ import { ReactComponent as ViewIcon } from "../icons/eye-icon.svg";
 import { ReactComponent as LikeIcon } from "../icons/heart-icon.svg";
 import { VictoryPie, VictoryLabel } from "victory";
 import React from 'react'
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
+
 
 const styles = {
   // Creating all the styles here
@@ -52,7 +55,33 @@ const Statistics = () => {
   return (
     <Card style={styles.root}>
     <CardActionArea>
-      
+     <Typography variant= "h6" >- Statistics</Typography>
+     <Typography style= {{marginTop: '60px',fontWeight: "bolder"}} variant= "body1" >- TOTAL_COST: </Typography>
+     <CountUp end={100} redraw={true}>
+        {({ countUpRef, start }) => (
+            <VisibilitySensor onChange={start} delayedCall>
+                <span ref={countUpRef} />
+            </VisibilitySensor>
+        )}
+    </CountUp>
+     <Typography style= {{marginTop: '20px',fontWeight: "bolder"}} variant= "body1" >- TOTAL_HOURS: </Typography>
+     <CountUp end={100} redraw={true}>
+        {({ countUpRef, start }) => (
+            <VisibilitySensor onChange={start} delayedCall>
+                <span ref={countUpRef} />
+            </VisibilitySensor>
+        )}
+    </CountUp>
+     <Typography style= {{marginTop: '20px',fontWeight: "bolder"}} variant= "body1" >- TOTAL_TIME: </Typography>
+     <CountUp end={100} redraw={true}>
+        {({ countUpRef, start }) => (
+            <VisibilitySensor onChange={start} delayedCall>
+                <span ref={countUpRef} />
+            </VisibilitySensor>
+        )}
+    </CountUp>
+
+
     </CardActionArea>
   </Card>
   )

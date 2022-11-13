@@ -4,7 +4,6 @@ import GraphUpload from "./Graph.js"
 import Statistics from "./Statistics";
 import Graph1 from "./Graph1";
 import Graph2 from "./Graph2";
-import Graph3 from "./Graph3";
 import {
   Box,
   Typography,
@@ -210,8 +209,8 @@ function Analytics() {
           </Box>
           <div style={{display: 'block'}}>
 <Graph1></Graph1>
-<Graph2></Graph2>
-<Graph3></Graph3>
+<Graph1></Graph1>
+<Graph1></Graph1>
 
 </div>
         </Box>
