@@ -3,7 +3,9 @@ import { ReactComponent as ExclamationIcon } from "../icons/urgent-icon.svg";
 import { ReactComponent as ViewIcon } from "../icons/eye-icon.svg";
 import { ReactComponent as LikeIcon } from "../icons/heart-icon.svg";
 import { VictoryPie, VictoryLabel } from "victory";
-
+import Button from '@mui/material/Button';
+import { ReactComponent as Nexticon } from "../icons/next-icon.svg"
+import { useNavigate } from 'react-router-dom';
 const styles = {
   // Creating all the styles here
   root: {
@@ -60,6 +62,11 @@ function CampaignCard({
   stats,
   completion,
 }: CampaingCardProps) {
+  const navigate = useNavigate();
+  const navigateToDashboard = () => {
+    // 👇️ navigate to /contacts
+    navigate('campaign/:id/analytics');
+  };
   return (
     <Card style={styles.root}>
       <CardActionArea>
@@ -91,16 +98,16 @@ function CampaignCard({
               flexDirection="column"
               style={{ alignItems: "center" }}
             >
-              <ViewIcon height={22.5} width={22.5} />
-              <Typography style={styles.stats}>{stats.views}</Typography>
+                
+
+              <Button onClick={navigateToDashboard} variant="text"><Nexticon></Nexticon></Button>
+
             </Box>
             <Box
               display="flex"
               flexDirection="column"
               style={{ alignItems: "center", marginLeft: 15 }}
             >
-              <LikeIcon height={22.5} width={15} />
-              <Typography style={styles.stats}>{stats.likes}</Typography>
             </Box>
             <svg viewBox="0 0 500 500" style={styles.chartBody}>
               <VictoryPie
@@ -125,6 +132,7 @@ function CampaignCard({
           </Box>
         </Box>
       </CardActionArea>
+
     </Card>
   );
 }

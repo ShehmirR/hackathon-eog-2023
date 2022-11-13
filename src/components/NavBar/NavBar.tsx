@@ -92,7 +92,7 @@ function NavBar() {
                 fontWeight: "bolder",
               }}
             >
-              InternstellarFinder
+              InterstellarFinder
             </Typography>
           </div>
           <Box

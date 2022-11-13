@@ -2,6 +2,8 @@ import react, { useState } from "react";
 import NavBar from "../components/NavBar/NavBar";
 import SearchBar from "../components/SearchBar/SearchBar";
 import CampaignCard from "./CampaignCard";
+
+
 import {
   Grid,
   Box,
@@ -582,11 +584,12 @@ function Dashboard() {
             >
               {Campaigns.map((c) => (
                 <Grid item style={{ marginBottom: 5 }}>
-                  <CampaignCard
+                  <CampaignCard 
                     title={c.title}
                     description={c.description}
                     stats={c.stats}
                     completion={c.completion}
+                   
                   />
                 </Grid>
               ))}
